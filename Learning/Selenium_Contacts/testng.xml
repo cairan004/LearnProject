@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+    
+  <test name="TestGroup" preserve-order="true">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestGroup"></class>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="TestProperty" preserve-order="true">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestProperty"></class>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="TestLabel" preserve-order="true">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel"></class>
+    </classes>
+  </test> <!-- Test -->
+    
+  <test name="TestSiderBar" preserve-order="true">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar"></class>
+    </classes>
+  </test> <!-- Test -->
+  
+<!--   <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class-name="Com.Selenium_Contacts.Units.TestngListener" />
+  </listeners> -->
+  
+</suite> <!-- Suite -->

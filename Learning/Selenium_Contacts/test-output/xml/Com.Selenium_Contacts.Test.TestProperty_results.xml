@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestProperty"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="39.032">
+  <properties />
+  
+  
+            <testcase name="testDelProperty" time="15.566" classname="Com.Selenium_Contacts.Test.TestProperty" />
+                <testcase name="testAddProperty" time="13.207" classname="Com.Selenium_Contacts.Test.TestProperty" />
+                <testcase name="testCheckProperty" time="10.259" classname="Com.Selenium_Contacts.Test.TestProperty" />
+      
+</testsuite>

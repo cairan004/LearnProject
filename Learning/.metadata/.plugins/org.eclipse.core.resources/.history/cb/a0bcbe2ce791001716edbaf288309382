@@ -1,0 +1,27 @@
+package web_automation.web_automation;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	//System.setProperty("webdriver.firefox.bin", "C:\\Program Files (x86)\\Mozilla Firefox");
+    	System.setProperty("webdriver.gecko.driver", ".\\Tools\\geckodriver.exe");
+    	WebDriver driver = new FirefoxDriver();
+    	driver.get("http://www.baidu.com");
+    	driver.manage().window().maximize();
+    	WebElement txbox=driver.findElement(By.name("wd"));
+    	txbox.sendKeys("hello");
+    	WebElement btn=driver.findElement(By.id("su"));
+    	btn.click();
+    	driver.close();
+    }
+}

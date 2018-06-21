@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="TestGroup">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestGroup"/>
+    </classes>
+  </test> <!-- TestGroup -->
+  <test name="TestProperty">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestProperty"/>
+    </classes>
+  </test> <!-- TestProperty -->
+  <test name="TestLabel">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel"/>
+    </classes>
+  </test> <!-- TestLabel -->
+  <test name="TestSiderBar">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar"/>
+    </classes>
+  </test> <!-- TestSiderBar -->
+  <test name="TestGroup(failed)">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestLabel -->
+      <class name="Com.Selenium_Contacts.Test.TestProperty">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestProperty -->
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar">
+        <methods>
+          <include name="getHomePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestSiderBar -->
+      <class name="Com.Selenium_Contacts.Test.TestGroup">
+        <methods>
+          <include name="testAddGroup"/>
+          <include name="testDelGroup"/>
+          <include name="testRenameGroup"/>
+          <include name="testAddNextGroup"/>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestGroup -->
+    </classes>
+  </test> <!-- TestGroup(failed) -->
+  <test name="TestProperty(failed)">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestLabel -->
+      <class name="Com.Selenium_Contacts.Test.TestProperty">
+        <methods>
+          <include name="testAddProperty"/>
+          <include name="testDelProperty"/>
+          <include name="getHomePage"/>
+          <include name="testCheckProperty"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestProperty -->
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar">
+        <methods>
+          <include name="getHomePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestSiderBar -->
+      <class name="Com.Selenium_Contacts.Test.TestGroup">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestGroup -->
+    </classes>
+  </test> <!-- TestProperty(failed) -->
+  <test name="TestLabel(failed)">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel">
+        <methods>
+          <include name="testAddLabel"/>
+          <include name="testEnableOrDisableLabel"/>
+          <include name="getHomePage"/>
+          <include name="testSearchLabel"/>
+          <include name="testBatchDelLabel"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestLabel -->
+      <class name="Com.Selenium_Contacts.Test.TestProperty">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestProperty -->
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar">
+        <methods>
+          <include name="getHomePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestSiderBar -->
+      <class name="Com.Selenium_Contacts.Test.TestGroup">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestGroup -->
+    </classes>
+  </test> <!-- TestLabel(failed) -->
+  <test name="TestSiderBar(failed)">
+    <classes>
+      <class name="Com.Selenium_Contacts.Test.TestLabel">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestLabel -->
+      <class name="Com.Selenium_Contacts.Test.TestProperty">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestProperty -->
+      <class name="Com.Selenium_Contacts.Test.TestSiderBar">
+        <methods>
+          <include name="getHomePage"/>
+          <include name="testSideBar"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestSiderBar -->
+      <class name="Com.Selenium_Contacts.Test.TestGroup">
+        <methods>
+          <include name="getHomePage"/>
+        </methods>
+      </class> <!-- Com.Selenium_Contacts.Test.TestGroup -->
+    </classes>
+  </test> <!-- TestSiderBar(failed) -->
+</suite> <!-- Failed suite [Suite] -->

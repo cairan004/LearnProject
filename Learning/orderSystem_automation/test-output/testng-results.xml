@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32601" started-at="2018-01-23T07:08:00Z" finished-at="2018-01-23T07:08:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32601" started-at="2018-01-23T07:08:00Z" finished-at="2018-01-23T07:08:33Z">
+      <class name="order_automation.Case.login">
+        <test-method status="PASS" signature="setup()[pri:0, instance:order_automation.Case.login@d8355a8]" name="setup" is-config="true" duration-ms="3891" started-at="2018-01-23T15:07:57Z" finished-at="2018-01-23T15:08:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getHome()[pri:0, instance:order_automation.Case.login@d8355a8]" name="getHome" is-config="true" duration-ms="2020" started-at="2018-01-23T15:08:00Z" finished-at="2018-01-23T15:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getHome -->
+        <test-method status="FAIL" signature="Entry()[pri:0, instance:order_automation.Case.login@d8355a8]" name="Entry" duration-ms="30556" started-at="2018-01-23T15:08:02Z" finished-at="2018-01-23T15:08:33Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-EE9KO91C', ip: '192.168.100.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=cmcc.hy.com.globaltravel, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=1770bd16, platform=LINUX, appActivity=cmcc.hy.com.globaltravel.MainActivity, desired={appPackage=cmcc.hy.com.globaltravel, appActivity=cmcc.hy.com.globaltravel.MainActivity, platformVersion=7.1.1, browserName=, platformName=Android, deviceName=1770bd16}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: a2e1d0d7-593f-4774-a22c-3f3479dbab52
+*** Element info: {Using=name, value=entryBtn}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-EE9KO91C', ip: '192.168.100.192', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=cmcc.hy.com.globaltravel, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=1770bd16, platform=LINUX, appActivity=cmcc.hy.com.globaltravel.MainActivity, desired={appPackage=cmcc.hy.com.globaltravel, appActivity=cmcc.hy.com.globaltravel.MainActivity, platformVersion=7.1.1, browserName=, platformName=Android, deviceName=1770bd16}, platformVersion=7.1.1, webStorageEnabled=false, locationContextEnabled=false, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: a2e1d0d7-593f-4774-a22c-3f3479dbab52
+*** Element info: {Using=name, value=entryBtn}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:43)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:99)
+	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByName(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at orderSystem_automation.Pages.LoginPage.clickEntryBtn(LoginPage.java:21)
+	at order_automation.Case.login.Entry(login.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Entry -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:order_automation.Case.login@d8355a8]" name="tearDown" is-config="true" duration-ms="5908" started-at="2018-01-23T15:08:33Z" finished-at="2018-01-23T15:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- order_automation.Case.login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestLabel"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="53.563">
+  <properties />
+  
+  
+            <testcase name="testEnableOrDisableLabel" time="8.526" classname="Com.Selenium_Contacts.Test.TestLabel" />
+                <testcase name="testAddLabel" time="6.454" classname="Com.Selenium_Contacts.Test.TestLabel" />
+                <testcase name="testSearchLabel" time="8.643" classname="Com.Selenium_Contacts.Test.TestLabel" />
+                <testcase name="testBatchDelLabel" time="29.940" classname="Com.Selenium_Contacts.Test.TestLabel" />
+      
+</testsuite>

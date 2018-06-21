@@ -1,0 +1,93 @@
+package interface_test.interface_test;import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.utils.URIBuilder;
+import org.apache.http.entity.BufferedHttpEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+
+public class search {
+	public void queryBill() throws ClientProtocolException, IOException{
+
+
+//构造请求参数
+
+List<NameValuePair> nameValuePairs = new LinkedList<NameValuePair>();
+
+nameValuePairs.add(new BasicNameValuePair("executePost", "【wb自动化】"));
+
+nameValuePairs.add(new BasicNameValuePair("draftDepartment", "平安银行乐山分行"));
+
+//组合url
+
+try {
+
+    URI uri = new URIBuilder().setScheme("http")
+
+    		  .setHost("stg1_host")
+
+    		  .setPath("/do/dcfcBillController/query")
+
+    		  .setParameters(nameValuePairs)
+
+    		  .build();
+
+      } catch (URISyntaxException e) {
+
+// TODO Auto-generated catch block
+
+      e.printStackTrace();
+
+}
+
+//执行请求
+
+         HttpGet httpGet = new HttpGet(uri);
+
+         HttpResponse response = httpClient.execute(httpGet);
+
+//解析返回值
+
+        HttpEntity entity = response.getEntity();
+
+        entity = new BufferedHttpEntity(entity);
+
+        String eString = EntityUtils.toString(entity);
+
+        JSONArray jsonArray = new JSONArray(eString);
+
+        for(int i=0;i<jsonArray.length();i++){
+
+            JSONObject jsonObject = jsonArray.getJSONObject(i);
+
+            String billName = jsonObject.getString("billName");
+
+            String draftDepartName = jsonObject.getString("draftDepartName");
+
+            AssertJUnit.assertTrue("查询出的清单的DCFC执行岗位没有包含：【wb自动化】", billName.contains("【wb自动化】"));
+
+            AssertJUnit.assertEquals("查询出的清单的制定部门名称不等于：平安银行乐山分行", "平安银行乐山分行", draftDepartName);
+
+}
+
+       // logger.info("查询清单结果展示正常");
+
+}
+}
